@@ -22,7 +22,7 @@ El eje por el que se van a ordenar se define como el módulo de la profundidad d
 - si el módulo es `0`, se ordena por la coordenada `x`
 - si es `1`, se ordena por la coordenada `y`
 
-La raíz se toma como el valor medio (longitud de la lista dividida entre 2, redondeada hacia abajo). A partir de ahí, el hijo izquierdo y derecho se crean llamando la función de manera recursiva, enviando las dos mitades de la lista sin incluir la raíz y sumándole `1` a la profundidad para ordenar con la siguiente coordenada.
+Asumiendo que los datos tienen distribución homogenea, la raíz se toma como el valor medio (longitud de la lista dividida entre 2, redondeada hacia abajo). A partir de ahí, el hijo izquierdo y derecho se crean llamando la función de manera recursiva, enviando las dos mitades de la lista sin incluir la raíz y sumándole `1` a la profundidad para ordenar con la siguiente coordenada.
 
 ### Generación de datos
 
