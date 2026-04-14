@@ -93,7 +93,7 @@ def graficar_rendimiento():
     print("\n=== Búsqueda por radio ===")
     print(f"{'Radio':<10} {'KDtree (s)':<15} {'Fuerza bruta (s)':<18}")
     for i in range(len(radios)):
-        speedup = t_fb_radio[i] / t_kd_radio[i] if t_kd_radio[i] > 0 else float('inf')
+        
         print(f"{radios[i]:<10} {t_kd_radio[i]:<15.6f} {t_fb_radio[i]:<18.6f}")
 
 

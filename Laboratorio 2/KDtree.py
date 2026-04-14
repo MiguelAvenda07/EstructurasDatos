@@ -9,7 +9,6 @@ class Nodo:
 
 
 import random
-
 def construir(datos, profundidad=0):
     raiz = None
 
@@ -26,7 +25,7 @@ def construir(datos, profundidad=0):
     eje = profundidad % len(puntos[0].posicion)
     puntos.sort(key=lambda p: p.posicion[eje])
 
-    mediana = len(puntos) // 2
+    mediana = len(puntos) // 2 # Esto se calcula asumiendo que los datos tienen distribución homogéneas
     raiz = puntos[mediana]
 
     raiz.izquierda = construir(puntos[:mediana], profundidad + 1)
